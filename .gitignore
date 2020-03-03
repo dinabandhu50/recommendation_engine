@@ -1,2 +1,2 @@
 # Ignore the data folder as it has data 
-./data
+./data/*
