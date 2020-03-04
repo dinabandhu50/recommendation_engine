@@ -1,5 +1,9 @@
 # This repository contains recommendation engine implementation
 
-## folder structure
-recommendation_engine
+# Dataset used
 
+[from this link](https://grouplens.org/datasets/movielens/)
+
+## folder structure
+
+recommendation_engine
