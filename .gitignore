@@ -1,2 +1,3 @@
 # Ignore the data folder as it has data 
 data/
+!src/data/

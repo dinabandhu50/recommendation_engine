@@ -1,0 +1,1 @@
+export GOOGLE_APPLICATION_CREDENTIALS='coe-solutions-215839-c9b1b2b721c8.json'

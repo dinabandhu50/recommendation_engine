@@ -5,6 +5,11 @@ dependencies:
     - scipy
     - pandas
     - jupyter
+    - scikit-learn
     - pip:
           - watermark
           - pytest
+          - scikit-surprise
+          - google-cloud-bigquery
+          - pandas-gbq
+          - tqdm
