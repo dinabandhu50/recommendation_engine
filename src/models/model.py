@@ -8,7 +8,7 @@ class SVDModel:
         self.model = SVD()
         self.name = 'Singular Value Decomposition'
 
-    def train(self, data, n_epochs=[5, 10], lr_all=[
+    def best_estimator_gridsearchCV(self, data, n_epochs=[5, 10], lr_all=[
             0.002, 0.005], reg_all=[0.4, 0.5], cv=3):
         param_grid = {'n_epochs': n_epochs,
                       'lr_all': lr_all, 'reg_all': reg_all}
@@ -18,8 +18,11 @@ class SVDModel:
         gs.best_params['rmse']
         self.model = gs.best_estimator['rmse']
 
-    def predict(self, **kwargs):
-        self.model.predict(**kwargs)
+    def train(self, *args, **kwargs):
+        self.model(*args, **kwargs).fit()
+
+    def predict(self, *args, **kwargs):
+        self.model.predict(*args, **kwargs)
 
     def save(file_name, predictions=None, algo=None, verbose=0):
         dump(file_name, predictions, algo, verbose)
