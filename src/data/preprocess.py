@@ -1,5 +1,10 @@
+import os
+import sys
+import numpy as np
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
+
+sys.path.insert(0, os.getcwd())
 
 
 def read_raw_data(fname='data/raw/clickstream_data.csv'):
@@ -11,7 +16,7 @@ def preprocess_data(dframe):
     dframe = dframe.copy()
     cols_rec = ['productID', 'sessionId', 'eventType']
     # choose only 3 relavent columns
-    dframe = dframe[cols_rec]
+    df = dframe[cols_rec]
     # fillna
     df['productID'] = df['productID'].fillna(0).astype('int32')
     # converting string value to numeric value

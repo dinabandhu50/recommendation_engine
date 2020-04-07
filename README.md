@@ -18,6 +18,20 @@ To create conda environment from yml file:
 conda env create -f conda.yml
 ```
 
+## How to use
+
+Run all the file from root folder
+
+```sh
+python src/train.py
+```
+
+or
+
+```sh
+python src/predict.py
+```
+
 ## folder structure
 
 recommendation_engine

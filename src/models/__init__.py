@@ -1,1 +1,1 @@
-from .model import SVDModel
+from .svdModel import SVDModel
